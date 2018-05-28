@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.ats.barstockexchangeuser.fragment.UserHomeFragment">
+
+    <LinearLayout
+        android:id="@+id/llUserHome_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOrange"
+            android:fontFamily="@font/sofiapro_bold"
+            android:text="Home"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            android:id="@+id/btnMyOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/sofiapro_bold"
+            android:text="My Orders"
+            android:textColor="@color/colorOrange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llUserHome_Button"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <HorizontalScrollView
+            android:id="@+id/title_horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/gridViewCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/zigzag_strip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_vertical"
+                    android:text="Alcohol Name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvExpUserItems_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="High"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tvExpUserItems_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Low"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvExpUserItems_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Price \u20B9"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ListView
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/lvAllItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00000000" />
+
+            <ExpandableListView
+                android:id="@+id/expListUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

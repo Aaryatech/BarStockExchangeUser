@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/nav_header_home"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#333333">
+
+                <LinearLayout
+                    android:id="@+id/llUserMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUserMenuHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/home_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuCallWaiter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/waiter_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Call Waiter"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/news_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="News"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/facebook_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Facebook"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuInstagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/instagram_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Instagram"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuRateApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/rate_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Rate the App"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/aboutus_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="About Us"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuAboutDev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/dev_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="About the Developers"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserMenuTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@mipmap/terms_icon"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Terms and Condition"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvUserSignOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/drawer_back"
+                        android:drawableLeft="@drawable/sign_out"
+                        android:drawablePadding="20dp"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:singleLine="true"
+                        android:text="Sign Out"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/tvCustomViewOrder_TableNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvCustomViewOrder_BillStatus"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="@color/colorText"
+                android:layout_margin="3dp"
+                android:id="@+id/tvCustomViewOrder_OrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sofiapro_light" />
+
+
+            <LinearLayout
+                android:background="@color/colorOrange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofiapro_bold"
+                    android:text="Item" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofiapro_bold"
+                    android:text="Quantity" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sofiapro_bold"
+                    android:text="Rate" />
+
+            </LinearLayout>
+            <ListView
+                android:divider="@color/colorText"
+                android:dividerHeight="1dp"
+                android:id="@+id/lvCustomViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

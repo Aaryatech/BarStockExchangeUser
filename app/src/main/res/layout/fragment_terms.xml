@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="com.ats.barstockexchangeuser.fragment.TermsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="16sp"
+            android:fontFamily="@font/sofiapro_light"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="Shail stock Exchange is registered company in Aurangabad,India.
+\n\nThese terms and conditions apply to the mobile applications accessible via ios and google play stores. Any use by you of this app is subject to your acceptance of the terms and conditions set out in this legal notice.If you access this app you are deemed to have read and accepted the above statement. if you do not accept these terms and conditions please exit and delete this app now.
+
+\n\n\nInformation and Data Protection
+\n\nAll personal information which you provide to us via the apps will be stored and used sensitively with basic data protection. Whenever you provide us with information via the apps, you will be deemed to have warranted to us that the information in question is accurate and that you have obtained all necessary permission for it to used by us. We will use these information provided by you to inform you about our latest promotions and/or any specific products and services that we think might be of interest to you. You can opt out of receiving these updates at any time by simply deleting the mobile app.
+\n\nAll trade marks on the logo and app content are owned by us or our licensors (including 3rd party providers of products and services available ). Except otherwise stated all contents of the app are copy rite to the particular materials can be used more widely. you are only permitted to download the material content on the app to a Single personal computer and / or to print a hard copy of the material content on the app for personal use and provided all copy rite, trade mark and other proprietary notices are left intact.you may not link to our app nor frame it without our express permission. If you would like to link to the app, please contact us.
+
+\n\n\nLegal Disclaimers
+\n\nWhile we endeavour to insure that the information on the app is correct, we do not warrant the accuracy or completeness of the material on the apps. We may make changes to the functionality  on the app, the material on the apps at any time without notice. The material on the app may be out of date and we make no commitment to update the material.
+\n\nOn the app we may have provided links to other apps or websites which, at the time of creating the links were believed to be of interest to our app users. We disclaim all liability arising from the information or materials contained.
+
+\n\n\nMiscellaneous
+\n\nIf you have any complaints or comments about the app please contact us by email at genekatech@gmail.com.\n\n\n "/>
+
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.ats.barstockexchangeuser.activity.RegistrationActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/llRegister_Form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_PersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Name"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="20dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_MobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="20dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/edRegister_DOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:editable="false"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Date Of Birth"
+                        android:inputType="none"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Date Of Birth"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:clipToPadding="false"
+                        android:gravity="bottom"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/edRegister_DOB_DD"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/edittext_border_layout"
+                            android:editable="false"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:gravity="center"
+                            android:hint="Day"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText"
+                            android:textColorHint="@color/colorText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:clipToPadding="false"
+                        android:gravity="bottom"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/edRegister_DOB_MM"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/edittext_border_layout"
+                            android:editable="false"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:gravity="center"
+                            android:hint="Month"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText"
+                            android:textColorHint="@color/colorText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:clipToPadding="false"
+                        android:gravity="bottom"
+                        android:textColorHint="@color/colorText">
+
+                        <EditText
+                            android:id="@+id/edRegister_DOB_YY"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/edittext_border_layout"
+                            android:editable="false"
+                            android:fontFamily="@font/sofiapro_light"
+                            android:gravity="center"
+                            android:hint="Year"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorText"
+                            android:textColorHint="@color/colorText" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvRegister_DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="20dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Email Id"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Password"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_ConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="Confirm Password"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/tvRegister_RegisterButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorOrange"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Sign Up"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegister_OTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:clipToPadding="false"
+                    android:gravity="bottom"
+                    android:textColorHint="@color/colorText">
+
+                    <EditText
+                        android:id="@+id/edRegister_OTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edittext_border_layout"
+                        android:fontFamily="@font/sofiapro_light"
+                        android:hint="OTP"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvRegister_VerifyOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorOrange"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Verify"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
